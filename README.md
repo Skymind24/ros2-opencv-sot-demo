@@ -1,4 +1,4 @@
-# ROS2 Foxy Single-Object-Tracking Demo with OpenCV Libraries
+# ROS2 Single-Object-Tracking Demo with OpenCV Libraries
 
 <br>
 
