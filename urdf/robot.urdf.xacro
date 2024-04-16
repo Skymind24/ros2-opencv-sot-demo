@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="person_tracking">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="ros2_opencv_sot_demo">
 
     <xacro:include filename="robot_core.xacro" />
 

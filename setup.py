@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import setup
 
-package_name = 'person_tracking'
+package_name = 'ros2_opencv_sot_demo'
 
 setup(
     name=package_name,
@@ -20,14 +20,14 @@ setup(
     zip_safe=True,
     maintainer='nvidia',
     maintainer_email='skymind0204@gmail.com',
-    description='Person Tracking with ROS 2',
+    description='Opencv SOT Demo with ROS 2',
     license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'v4l2_camera_node = v4l2_camera.v4l2_camera_node:main',
-            'tracker = person_tracking.tracker:main',
-            'detector = person_tracking.detector:main'
+            'tracker = ros2_opencv_sot_demo.tracker:main',
+            'detector = ros2_opencv_sot_demo.detector:main'
         ],
     },
 )

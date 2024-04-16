@@ -12,7 +12,7 @@ from launch.substitutions import FindExecutable, LaunchConfiguration, Environmen
 
 def generate_launch_description():
 
-    package_name='person_tracking' # CHANGE ME
+    package_name='ros2_opencv_sot_demo' # CHANGE ME
 
     ### Lanch File ###
     camera = IncludeLaunchDescription(
@@ -23,7 +23,7 @@ def generate_launch_description():
 
     ### Node ###
     tracker_node = Node(
-        package='person_tracking',
+        package=package_name,
         executable='tracker',
         remappings=[
             ('/image_raw', 'image_raw'),
@@ -32,7 +32,7 @@ def generate_launch_description():
     )
 
     detector_node = Node(
-        package='person_tracking',
+        package=package_name,
         executable='detector',
         remappings=[
             ('/image_raw', 'image_raw'),
