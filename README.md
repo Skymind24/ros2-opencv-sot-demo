@@ -8,5 +8,5 @@
 <br>
 
 ```
-ros2 launch person_tracking tracking_demo.launch.py
+ros2 launch ros2_opencv_sot_demo tracking_demo.launch.py
 ```
